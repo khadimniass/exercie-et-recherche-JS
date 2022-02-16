@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> AFFICHQGE AVEC HTML</h1>
+<div id="divTP2">
+    <p>Langages basés sur ECMAScript :</p>
+    <ul>
+        <li>JavaScript</li>
+        <li>JScript</li>
+        <li>ActionScript</li>
+        <li>EX4</li>
+    </ul>
+</div>
+<h1> AFFICHQGE AVEC JS</h1>
+<script>
+
+        var tab = [
+        document.createTextNode('JavaScript'),
+        document.createTextNode('JScript'),
+        document.createTextNode('ActionScript'),
+        document.createTextNode('EX4')
+    ];
+    let d = document.createElement("div");
+    d.id = "divTP2";
+    let p = document.createElement("p");
+    
+    let p1 = document.createTextNode('Langages basés sur ECMAScript :');
+    let ul = document.createElement("ul");
+    for (let i = 0; i < tab.length; i++) {
+        let li = document.createElement("li");
+        li.appendChild(tab[i]);
+        ul.appendChild(li);
+    }
+
+    p.appendChild(p1);
+    d.appendChild(p);
+    d.appendChild(ul);
+    document.body.appendChild(d);
+</script>
+<a href="index.html">ACCUEIL...</a>
+</body>
+</html>

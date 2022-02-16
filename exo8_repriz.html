@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>revision Exercice8</title>
+</head>
+<body>
+<div id="divTP4">
+    <form enctype="multipart/form-data" method="post" action="upload.php">
+        <fieldset>
+            <legend>Uploader une image</legend>
+            <div style="text-align: center">
+                <label for="inputUpload">Image à uploader :</label>
+                <input type="file" name="inputUpload" id="inputUpload" />
+                <br /><br />
+                <input type="submit" value="Envoyer" />
+            </div>
+        </fieldset>
+    </form>
+</div>
+
+
+<div id="divTP4">
+    <form enctype="multipart/form-data" method="post" action="uploader.php">
+       <fieldset>
+        <legend>Uploader une image </legend>
+            <label>Image à uploader :</label>
+                <div style="text-align: center">
+                    <label for="inputUpload"> </label>
+                    <input type='file' name="inputUpload" id="inputUpload" \><br><br>
+                    <input type="submit" value="Envoyer" \>
+
+                </div>
+        </fieldset>
+    </form>
+</div>
+<script>
+    var tab=[
+    document.createTextNode('Uploader une image'),
+    document.createTextNode('Image à uploader :'),
+    ];
+    var mydiv1=document.createElement('div');
+    mydiv1.id="divTP4";
+    var myform=document.createElement('form');
+    myform.enctype="multipart/form-data";
+    myform.method="post";
+    myform.action="uploader.php";
+    var myfieldset=document.createElement('fieldset');
+    var mylegend=document.createElement('legend');
+    var mydiv2=document.createElement('div');
+    mydiv2.style="text-align: center";
+    var mylabel=document.createElement('label');
+    mylabel.for="inputUpload";
+    var myinput=document.createElement('input');
+    myinput.type='file';
+    myinput.name="inputUpload";
+    myinput.id="inputUpload";
+    var br1=document.createElement('br');
+    var br2=document.createElement('br');
+    var inputsend=document.createElement('input');
+    inputsend.type="submit";
+    inputsend.value='Envoyer';
+    var myh1=document.createElement('h1');
+    var montittre=document.createTextNode('Affichage du passage HTML-JS');
+    myh1.appendChild(montittre);
+
+  mydiv1.appendChild(myh1);
+  mydiv1.appendChild(myform);
+  mylegend.appendChild(tab[0]);
+  myfieldset.appendChild(mylegend);
+  mylabel.appendChild(tab[1]);
+    mydiv2.appendChild(mylabel);
+    mydiv2.appendChild(myinput);
+    mydiv2.appendChild(br1);
+    mydiv2.appendChild(br2);
+    mydiv2.appendChild(inputsend);
+    myfieldset.appendChild(mydiv2);
+  mydiv1.appendChild(myfieldset);
+  document.body.appendChild(mydiv1);
+</script>
+</body>
+</html>

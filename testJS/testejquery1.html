@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JOUER AVEC JQUERY</title>
+</head>
+	<body>
+	<!--  -->
+	<h1 id="tittre">On découvre JS, disparution en une click</h1>
+	<p class="paragraph">Un paragraph, disparution du paragraphe en 2 clicks</p>
+	<p id="p1">Passer sur moi...</p>
+	<p class="classp2">Et j'apparais vite toc !</p>
+	
+	<script src="jquery-3.4.1.js"></script>
+		<script> 
+		var myh1=document.createElement('h1');
+		var titre=document.createTextNode("S'AMUSER AVEC JQUERY ET LES EVENEMENT");
+		myh1.appendChild(titre);
+		document.body.appendChild(myh1);
+		$('#tittre').before("this is before my tittle");
+		$('#tittre').after("this is after my tittle");
+		<!-- La gestion des événements -->
+		$(document).ready(function(){
+		$('h1').click(function(){
+		 $(this).hide();
+		});
+		});
+		$(document).ready(function(){
+		$('.p1').dblclick(function(){
+		 $(this).hide();
+		});
+		});
+
+		$(document).ready(function(){
+
+		$(".classp2").hide();
+		$(".classp1").mouseenter(function(){
+		$(".classp2").show();
+		});
+
+		$(".classp1").mouseenter(function(){
+		$(".classp2").hide();
+		});
+
+		});
+		</script>
+	</body>
+</html>

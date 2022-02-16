@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EXO8</title>
+</head>
+<body>
+<h1> AFFICHAGE AVEC HTML</h1>
+<div id="divTP4">
+    <form enctype="multipart/form-data" method="post" action="upload.php">
+        <fieldset>
+            <legend>Uploader une image</legend>
+            <div style="text-align: center">
+                <label for="inputUpload">Image à uploader :</label>
+                <input type="file" name="inputUpload" id="inputUpload" />
+                <br /><br />
+                <input type="submit" value="Envoyer" />
+            </div>
+        </fieldset></form></div>
+<h1> AFFICHAGE AVEC JS</h1>
+<script type="text/javascript">
+    var tab = [
+    document.createTextNode("Uploader une image"),
+    document.createTextNode("Image à uploader")
+    ];
+    let div  = document.createElement("div"),
+        div1 = document.createElement("div");
+    let form = document.createElement("form"),
+        fiel = document.createElement("fieldset");
+    let legend = document.createElement("legend");
+    let label = document.createElement("label");
+    let input = document.createElement("input"),
+        input1 = document.createElement("input");
+    let br = document.createElement("br"),
+        br1 = document.createElement("br");
+    div.id = "divTP4";
+    form.enctype = enctype = "multipart/form-data";
+    form.method = "post";
+    form.action = "upload.php"
+    div1.style = "text-align: center";
+    label.htmlFor = "inputUpload";
+    input.type = "file";
+    input.name = "inputUpload";
+    input.id = "inputUpload";
+    input1.type = "submit";
+    input1.value = "Envoyer";
+
+    legend.appendChild(tab[0]);
+    fiel.appendChild(legend);
+    form.appendChild(fiel);
+    div.appendChild(form);
+
+    label.appendChild(tab[1]);
+    div1.appendChild(label);
+    div1.appendChild(input);
+    div1.appendChild(br);
+    div1.appendChild(br1);
+    div1.appendChild(input1);
+    fiel.appendChild(div1);
+    form.appendChild(fiel);
+    div.appendChild(form);
+
+    document.body.appendChild(div);
+</script>
+<a href="index.html">ACCUEIL...</a>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Significatiion de HTML</title>
+</head>
+<body>
+<script>
+    var varhtml="HYPERTEXT MARKUP LANGUAGE";
+    var i=1;
+    var htmltest=(prompt("Quelle est la signification de HTML").toUpperCase());
+    while(i<=3){
+        i++;
+        if(htmltest==varhtml){
+            break;
+        }else{
+            alert("bad ");
+            var htmltest = prompt("mauvais ! Quelle est la signification de HTML");
+        }
+    }
+    if (i==3){
+    alert("Désolé Vous avez fait trop de tentatives !!!");        
+    } else if (htmltest==varhtml) {
+            alert("Felicitation !!!");
+    }
+</script>
+<a href="index.html">ACCUEIL...</a>
+</body>
+</html>

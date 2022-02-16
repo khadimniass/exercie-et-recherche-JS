@@ -1,0 +1,45 @@
+<!Doctype html>
+<html lang="fr">
+<head>
+    <title>Conversion HTML et JS</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<div id="divTP2">
+<h1>AFFICHAGE AVEC JS</h1>
+<p>Langages basés sur ECMAScript :</p>
+ <ul>
+     <li>JavaScript</li>
+     <li>JScript</li>
+     <li>ActionScript</li>
+     <li>EXO4</li>
+ </ul>
+</div>
+<script>
+        mytab=[
+        document.createTextNode('JavaScript'),
+        document.createTextNode('JScript'),
+        document.createTextNode('ActionScript'),
+        document.createTextNode('EXO4'),
+        ];
+     var mydiv=document.createElement('div');
+     mydiv.id='divTP2';
+     var myh1=document.createElement('h1');
+     var mytittle=document.createTextNode('affichage html avec js');
+     myh1.appendChild(mytittle);
+     var myp=document.createElement('p');
+     var paragraph=document.createTextNode('Langages basés sur ECMAScript :');
+     myp.appendChild(paragraph);
+    var myul=document.createElement('ul');
+    for (var i=0;i<mytab.length;i++){
+        var myli=document.createElement('li');
+        myli.appendChild(mytab[i]);
+        myul.appendChild(myli);
+    }
+     mydiv.appendChild(myh1);
+     mydiv.appendChild(myp);
+     mydiv.appendChild(myul);
+     document.body.appendChild(mydiv);
+ </script>
+</body>
+</html>

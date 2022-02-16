@@ -1,0 +1,34 @@
+<!-- Les événements de la souris -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>JOUER JQUERY</title>
+</head>
+<body>
+<h1>Gestion des événements liée à la souris, formulaire</h1>
+<label for="prenom" ><span style="color: red">* </span>Votre prénom</label>
+<input type='text' id='prenom' name='prenom'><br>
+<label for="nom" >Votre nom</label>
+<input type='text' id='nom' name='nom'><br>
+<button>confir</button>
+
+<script src="jquery-3.4.1.js"></script>
+
+<script>
+$('document').ready(function(){
+//Si une touche est enfoncée, le champ est bleu
+	$('prenom').keydown(function){
+	$('this').css('background-color','#69C');
+});
+//Si On lache la touche, le champ devient orange
+	$('prenom').keydup(function){
+	$('this').css('background-color','#C72');
+});
+
+
+
+});
+</script>
+</body>
+</html>

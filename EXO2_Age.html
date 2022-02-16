@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Age de l'enfant</title>
+</head>
+<body>
+<script>
+    var age=parseInt(prompt("Entrez votre age"));
+    if(age){
+            if (age<=1 && age<=6) {
+                alert("Vous Vêtes un jeune enfant");
+            }
+            else if (age>6 && age<=11){
+                alert("Vous êtes un enfant qui a atteint l'age de raison");
+            }else if (age>11 && age<=17){
+                alert("Vous êtes un adolescent");
+            }else if (age>17 && age<=120){
+                alert("Vous êtes Adulte");
+            }else {
+                alert("Sorry L'age doit être compris entre 1 and 120");
+            }
+    }else {
+        alert("Vous n'avez pas renségné l'âge");
+    }
+</script>
+<a href="index.html">ACCUEIL...</a>
+</body>
+</html>

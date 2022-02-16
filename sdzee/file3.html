@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>Maitriser les variables</p>
+  <script> 
+    let fullName=['khadim niass',
+              'mbaye Thiobane',
+              'Baye Ndaw',
+              'Penda '];
+//console.log('la liste des noms présents sont : '+fullName);
+//console.log('Le premier élément du tableau est: '+fullName[0])
+let person={
+  name:'Khadim Niass',
+  color:'black'
+}
+person.name='Ahmadou';
+console.log('combien d\'élément y\'a t-il dans le tableau fullName :'
+            +fullName.length);
+//Ajouter des éléments dans le tableau, a la fin
+fullName.push('Mame Faty');
+fullName.push(person);
+//ajouter un élément au début
+fullName.unshift('Sama Yaye');
+fullName.pop();//effacer le dernier du tableau
+console.log(fullName);
+  </script>
+</body>
+</html>

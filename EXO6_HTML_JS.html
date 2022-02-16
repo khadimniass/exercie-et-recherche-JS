@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Passage de Html en javaScript</title>
+</head>
+<body>
+
+<h1>Affichage avec HTML</h1>
+<div id="divTP1">
+    Le <strong>World Wide Web Consortium</strong>, abrégé par le sigle <strong>W3C</strong>, est un<a href="http://fr.wikipedia.org/wiki/Organisme_de_normalisation"
+     title="Organisme de normalisation">organisme de standardisation</a> à but non-lucratif chargé de promouvoir lacompatibilité des technologies du <a href="http://fr.wikipedia.org/wiki/World_Wide_Web" title="World Wide Web">World Wide Web</a>
+</div>
+<h1>Affichage avec JS</h1>
+<script type="text/javascript">
+    var tab=[
+        document.createTextNode("Le "),
+        document.createTextNode("World Wide Web Consortium "),
+        document.createTextNode(" abrégé par le sigle "),
+        document.createTextNode("W3C"),
+        document.createTextNode(", est un "),
+        document.createTextNode("organisme de standardisation "),
+        document.createTextNode(" à but non-lucratif chargé de promouvoir lacompatibilité des technologies du"),
+        document.createTextNode("World Wide Web"),
+];
+var mylink1=document.createElement("a");
+mylink1.href='http://fr.wikipedia.org/wiki/Organisme_de_normalisation';
+mylink1.title='Organisme de normalisation';
+
+var mylink2=document.createElement('a');
+mylink2.href='http://fr.wikipedia.org/wiki/World_Wide_Web';
+mylink2.title='World Wide Web';
+
+var mydiv=document.createElement('div');
+var mystrong=document.createElement('strong');
+mydiv.id='divTP1';
+
+mylink1.appendChild(tab[5]);
+mylink2.appendChild(tab[7]);
+mystrong.appendChild(tab[1]);
+mystrong.appendChild(tab[3]);
+
+mydiv.appendChild(tab[0]);
+mydiv.appendChild(mystrong);
+mydiv.appendChild(tab[2]);
+mydiv.appendChild(mystrong.cloneNode(false));
+mydiv.appendChild(tab[4]);
+mydiv.appendChild(mylink1);
+mydiv.appendChild(tab[6]);
+mydiv.appendChild(mylink2);
+document.body.appendChild(mydiv);
+</script>
+<a href="index.html">ACCUEIL...</a>
+</body>
+</html>

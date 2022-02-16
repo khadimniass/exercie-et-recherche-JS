@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JOUER JQUERY</title>
+</head>
+<body>
+<h1 id="myId">tester jQery</h1>
+<p class='p1'>passez sur moi, Survoler ...</p>
+<p class='p2'>...et j'apparait</p>
+<script src="jquery-3.4.1.js"></script>
+<script>
+var myh1=document.createElement('h1');
+let titl=document.createTextNode('Gestion des événement avec jQuery');
+myh1.appendChild(titl);
+document.body.appendChild(myh1);
+$('document').ready(function(){
+	$('p2').hide();
+	$('.p1').mouseenter(function(){
+	   $('.p2').show();	
+ });
+$('.p1').mouseleave(function(){
+	$('.p2').hide();
+});
+});
+</script>
+</body>
+</html>

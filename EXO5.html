@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Deviner nombre</title>
+</head>
+<body>
+<script type="text/javascript">
+    function nbAlea(min,max){
+        var nb=min+(max-min+1)*Math.random();
+        return Math.floor(nb);
+    }
+    n=nbAlea(0,100);
+    nb=parseInt(prompt(n+"entrez ce nombre généré")); //On affiche le nombre en premier pour faciliter le test et pour etre sûr !
+    // nb=parseInt(prompt("entrez ce nombre généré"));
+    var i=0;
+    while(nb!=n){
+        i++;
+        if(nb<n){
+            alert("p'tit");
+            nb=parseInt(prompt(n+"entrez un nombre "));
+        }
+        else{
+            alert("grand");
+            nb=parseInt(prompt(n+"entrez un nombre"));
+        }
+    }
+    alert("Vous avez trouvez avec "+i+" de tentatives invalides");
+
+</script>
+<a href="index.html">ACCUEIL...</a>
+</body>
+</html>

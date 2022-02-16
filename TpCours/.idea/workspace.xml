@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6569a34b-584d-495a-8d76-6d0d2e213a73" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../GestionLivres/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GestionLivres/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GestionLivres/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RepriseTpJs/exo1_PrenomNom.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RepriseTpJs/exo2_TransdAge.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RepriseTpJs/exo3_Multiplication.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RepriseTpJs/exo4_HTML.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jQuery/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jeux/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jeux/js/main.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1h9oFAHHYkAHbvZVFnvVAzRAB1X" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="C:/wamp64/www/TpCours" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6569a34b-584d-495a-8d76-6d0d2e213a73" name="Default Changelist" comment="" />
+      <created>1599432563261</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599432563261</updated>
+      <workItem from="1599432564367" duration="929000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="263" y="18" key="#CLI_Interpreters" timestamp="1599433320342">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="263" y="18" key="#CLI_Interpreters/0.0.1366.728@0.0.1366.728" timestamp="1599433320342" />
+    <state x="390" y="6" key="#PHP" timestamp="1599433322152">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="6" key="#PHP/0.0.1366.728@0.0.1366.728" timestamp="1599433322152" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1599433494524">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599433494524" />
+    <state x="517" y="287" key="NewPhpFileDialog" timestamp="1599432625876">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1599432625876" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1599433347990">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1599433347990" />
+  </component>
+</project>
